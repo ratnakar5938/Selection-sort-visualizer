@@ -1,0 +1,15 @@
+.card {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.card-body {
+    height: 80%;
+    width: 80%;
+    background-color: black;
+}
