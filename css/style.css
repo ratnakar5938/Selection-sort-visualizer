@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     nav ul :hover > ul {
         opacity: 1;
         visibility: visible;
