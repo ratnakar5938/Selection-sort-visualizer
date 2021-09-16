@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
-@media only screen and (max-width: 600px) {
-    nav ul :hover > ul {
-        opacity: 1;
-        visibility: visible;
-        display: inline-block;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -70,6 +62,7 @@ nav ul ul {
 nav ul :hover > ul {
     opacity: 1;
     visibility: visible;
+    z-index: 999;
 }
 
 nav ul ul li {
