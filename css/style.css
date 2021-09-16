@@ -1,15 +1,104 @@
-.card {
-    height: 80vh;
-    width: 100vw;
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+@media (max-width: 700px) {
+    .card {
+        height: 50vh;
+    }
 }
 
-.card-body {
-    height: 80%;
-    width: 80%;
-    background-color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+/* body {
+    background: #f2f2f2;
+}
+nav {
+    background: #1b1b1b;
+    width: 100%;
+} */
+nav:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+nav ul {
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+    color: #ffffff;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 16px;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: #9bcee5;
+}
+
+nav .dropdown-item {
+    background-color: #ffffff;
+}
+
+.click-btn:hover {
+    border-radius: 5px;
+    border-bottom: 1px solid #33ffff;
+    cursor: pointer;
+}
+nav ul ul {
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul :hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    /* background-color: #1b1b1b; */
+    position: relative;
+    margin: 0px;
+    /* width: 200px; */
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid;
+}
+
+.range-input {
+    background: #ffffff;
+    -webkit-appearance: none;
+    height: 2px;
+    outline: none;
+    border-radius: 2px;
+}
+
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #33ffff;
+    cursor: pointer;
+}
+.range-input::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #33ffff;
+    cursor: pointer;
 }
