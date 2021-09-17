@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-.h1{
-  margin-bottom:0;
+.h1 {
+    margin-bottom: 0;
 }
 
 * {
@@ -11,17 +11,22 @@
     color: white;
     scroll-behavior: smooth;
 }
-h1
-{
-  margin-bottom:0;
-  padding:0;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(245,58,58,1) 0%, rgba(219,114,114,1) 23.7%, rgba(148,39,228,1) 60.3%, rgba(224,77,77,1) 92.9% );
-  text-align: center;
-  color: black;
-  font-family: 'Alatsi';
+.head {
+    margin-bottom: 0;
+    padding: 0;
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(245, 58, 58, 1) 0%,
+        rgba(219, 114, 114, 1) 23.7%,
+        rgba(148, 39, 228, 1) 60.3%,
+        rgba(224, 77, 77, 1) 92.9%
+    );
+    text-align: center;
+    color: black;
+    font-family: "Alatsi";
 }
- body {
-    background-color:black;
+body {
+    min-height: 100vh;
 }
 nav {
     background: #1b1b1b;
@@ -59,7 +64,7 @@ nav ul li a:hover {
   color: white;
 }*/
 
-nav .dropdown-item {
+nav .active-change {
     z-index: 999999;
     background-color: snow;
 }
@@ -68,14 +73,18 @@ nav .dropdown-item {
   color:white;
 }*/
 
+.active-change:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
 .click-btn:hover {
     border-radius: 5px;
     border-bottom: 3px solid black;
     cursor: pointer;
     background-color: white;
 }
-
-
 
 nav ul ul {
     position: absolute;
